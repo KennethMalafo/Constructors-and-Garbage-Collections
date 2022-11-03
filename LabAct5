@@ -1,0 +1,72 @@
+import java.util.Scanner;
+class userInput {
+
+        int FirNum, SecNum, ThiNum, FTotal;
+        int operation;
+
+        void display(){
+
+        Scanner calcu = new Scanner(System.in);
+        try {
+
+            System.out.println("1. Addition");
+            System.out.println("2. Subtraction");
+            System.out.println("3. Multiplication");
+            System.out.println("4. Division");
+            System.out.print("Choose your Operator: ");
+            operation = calcu.nextInt();
+
+            if (operation == 1) {
+                System.out.print("Enter the First Number: ");
+                FirNum = calcu.nextInt();
+                System.out.print("Enter the Second Number: ");
+                SecNum = calcu.nextInt();
+                System.out.print("Enter the Third Number: ");
+                ThiNum = calcu.nextInt();
+                FTotal = FirNum + SecNum + ThiNum;
+                System.out.print("The Total is: " +FTotal);
+                }
+            if (operation == 2) {
+                System.out.print("Enter the First Number: ");
+                FirNum = calcu.nextInt();
+                System.out.print("Enter the Second Number: ");
+                SecNum = calcu.nextInt();
+                System.out.print("Enter the Third Number: ");
+                ThiNum = calcu.nextInt();
+                FTotal = FirNum - SecNum - ThiNum;
+                System.out.print("The Total is: " +FTotal);
+                }
+            if (operation == 3) {
+                System.out.print("Enter the First Number: ");
+                FirNum = calcu.nextInt();
+                System.out.print("Enter the Second Number: ");
+                SecNum = calcu.nextInt();
+                System.out.print("Enter the Third Number: ");
+                ThiNum = calcu.nextInt();
+                FTotal = FirNum * SecNum * ThiNum;
+                System.out.print("The Total is: " +FTotal);
+                }
+            if (operation == 4) {
+                System.out.print("Enter the First Number: ");
+                FirNum = calcu.nextInt();
+                System.out.print("Enter the Second Number: ");
+                SecNum = calcu.nextInt();
+                System.out.print("Enter the Third Number: ");
+                ThiNum = calcu.nextInt();
+                FTotal = FirNum / SecNum / ThiNum;
+                System.out.print("The Total is: " +FTotal);
+                }
+            }
+        catch(Exception e){
+            System.out.print("Oops, I'm sorry but you can't do that!");
+        }
+    }
+}   public class LabAct5 {
+
+    public static void main(String args[]) {
+        userInput newUser = new userInput();
+        newUser.display();
+    }
+}
+
+
